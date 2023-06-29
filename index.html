@@ -20,6 +20,12 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
+    <script>
+        $("#myexptmodalbtn").click(function(){
+            $("#staticBackdrop").modal({backdrop: false});
+        });
+    </script>
       <!--Main Navigation-->
   <header>
     <style>
@@ -224,7 +230,7 @@
         </div>
 
           <!-- Button trigger modal -->
-           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+           <button type="button" id="myexptmodalbtn" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
            Launch static backdrop modal
            </button>
 
